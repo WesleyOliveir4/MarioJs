@@ -45,6 +45,23 @@
     animation: jump 500ms ease-out;
 }
 
+.btnReiniciar{
+    padding: 12px;
+    text-decoration: none;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background: #f8ea29ea;
+    color: rgb(0, 8, 8);
+    
+    visibility: hidden;
+    margin-top: 285px;
+    margin-left: 500px;
+}
+
+
 @keyframes pipe-animation {
     from{
         right: -80px;

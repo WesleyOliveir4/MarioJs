@@ -2,6 +2,7 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const clouds = document.querySelector('.clouds');
 const gameOverBackground = document.querySelector('.Game-Over-background');
+const btnReiniciar = document.querySelector('.btnReiniciar');
 
 const jump = () =>{
     mario.classList.add('jump');
@@ -11,6 +12,12 @@ const jump = () =>{
 
     },500)
 }
+
+function reiniciarGame()
+{
+    window.location.reload();
+}
+
 
 const loop = setInterval(()=>{
 
@@ -34,10 +41,14 @@ const loop = setInterval(()=>{
         mario.style.marginLeft = '50px';
         
         gameOverBackground.setAttribute('style', 'visibility:visible')
+        btnReiniciar.setAttribute('style', 'visibility:visible')
 
         clearInterval(loop);
     }
 
 },10)
+
+
+
 
 document.addEventListener('keydown', jump);

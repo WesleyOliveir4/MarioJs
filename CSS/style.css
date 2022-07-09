@@ -19,6 +19,14 @@
     animation: clouds-animation 15s infinite linear;
 }
 
+.Game-Over-background{
+    position: absolute; 
+    margin-left: 500px;
+    margin-top: 125px;
+    width: 300px;
+    visibility: hidden;
+}
+
 .pipe{
     position: absolute;
     bottom: 0;
